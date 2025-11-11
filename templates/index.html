@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>폴더 선택</title>
+</head>
+<body>
+    <h2>PDF 폴더 선택</h2>
+    <ul>
+        {% for folder in subfolders %}
+        <li><a href="/files?folder={{ folder }}">{{ folder }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
